@@ -48,14 +48,14 @@ const NavBar = () => {
               <Nav.Link href="#projects"  className={activeLink === 'projects'? 'active navbar-link':'navbar-link'} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
-                <div className="social-icons">
+                <div className="social-icons ">
                   
 
-            <FontAwesomeIcon icon={faGithub}  />
+            <FontAwesomeIcon icon={faGithub} color='white' />
 
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} color='white'/>
 
-            <FontAwesomeIcon icon={faTwitter}  />
+            <FontAwesomeIcon icon={faTwitter}  color='white'/>
   
 </div>
                     <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>

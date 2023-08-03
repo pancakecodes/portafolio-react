@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
                 <div className="carousel-item active">
                   <img
                     src={Designer}
-                    className="d-block w-100"
+                    className=" w-25"
                     alt="Designer"
                   />
                   <h5>Designer</h5>
@@ -66,19 +66,19 @@ const Skills: React.FC = () => {
                 <div className="carousel-item">
                   <img
                     src={AppDevelopment}
-                    className="d-block w-100"
+                    className=" w-25"
                     alt="App Development"
                   />
                   <h5>App Development</h5>
                 </div>
                 <div className="carousel-item">
-                  <img src={UX} className="d-block w-100" alt="UX" />
+                  <img src={UX} className=" w-25" alt="UX" />
                   <h5>Ux/UI Designer</h5>
                 </div>
                 <div className="carousel-item">
                   <img
                     src={Testing}
-                    className="d-block w-100"
+                    className=" w-25"
                     alt="Testing"
                   />
                   <h5>Testing</h5>

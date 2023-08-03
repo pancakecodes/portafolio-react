@@ -531,6 +531,7 @@ nav.navbar .narbar-toggler[aria-expanded="true"] .navbar-toggle-icon {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 
