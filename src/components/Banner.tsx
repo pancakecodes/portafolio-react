@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import  HeadderImg  from "../assets/img/mano-m-f1.png";
 
 const Banner: React.FC = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -53,7 +54,7 @@ const Banner: React.FC = () => {
             <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect <ArrowRightCircle size={25}/></span></button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={"../assets/img/mano-m-f1.png"} alt="Headder Img"/>
+            <img src={ HeadderImg} alt="Headder Img"/>
           </Col>
         </Row>
       </Container>

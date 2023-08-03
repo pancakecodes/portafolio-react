@@ -1,9 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { faComputer, faPenNib, faCode } from "@fortawesome/free-solid-svg-icons";
-import "react-multi-carousel/lib/styles.css";
+import  AppDevelopment  from "../assets/img/app-development.png";
+import Designer from "../assets/img/illustrator.png";
+import Testing from "../assets/img/testing.png";
+import UX from "../assets/img/ux.png";
 
 
 const Skills = () => {
@@ -41,19 +42,19 @@ const Skills = () => {
                         </p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
-                                <FontAwesomeIcon icon={faComputer} style={{ color: "#ffffff" }} />
+                                <img src={Designer} alt= "Designer"/>
                                 <h5>Designer</h5>
                             </div>
                             <div className="item">
-                                <FontAwesomeIcon icon={faPenNib} style={{ color: "#ffffff" }} />
-                                <h5>FrontEnd Development</h5>
+                                <img src={AppDevelopment} alt= "App Development"/>
+                                <h5>App Development</h5>
                             </div>
                             <div className="item">
-                                <FontAwesomeIcon icon={faCode} style={{ color: "#ffffff" }} />
-                                <h5>BackEnd Developer</h5>
+                                <img src={UX} alt="UX"/>
+                                <h5>Ux/UI Designer</h5>
                             </div>
                             <div className="item">
-                                <FontAwesomeIcon icon={faCode} style={{ color: "#ffffff" }} />
+                                <img src={Testing} alt= "Testing"/>
                                 <h5>Testing</h5>
                             </div>
                             </Carousel>

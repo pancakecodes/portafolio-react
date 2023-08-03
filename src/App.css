@@ -98,21 +98,21 @@ span.navbar-text {
 }
 
 .social-icons {
-  display: inline-block;
+  display: flex; /* Para colocar los íconos horizontalmente */
   margin-left: 14px;
 }
 
 .social-icons a {
   width: 42px;
   height: 42px;
-  background: rgba(217, 217, 217, 0.1);
-  display: inline-block;
+  background: rgba(255, 255, 255, 0.5); /* Fondo blanco transparente */
+  display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1pc solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 1); /* Borde blanco sólido */
 }
 
 .social-icons a::before {
@@ -120,7 +120,7 @@ span.navbar-text {
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #fff; /* Ícono blanco */
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -131,7 +131,7 @@ span.navbar-text {
 }
 
 .social-icons a img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(103%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Ícono blanco */
 }
 
 .navbar-text button {
@@ -225,24 +225,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggle-icon::before {
 nav.navbar .narbar-toggler[aria-expanded="true"] .navbar-toggle-icon {
   border-color: transparent;
 }
+.social-icons {
+  display: flex; /* Para colocar los íconos horizontalmente */
+  margin-left: 14px;
+}
 
 .social-icons a.social-icon {
   width: 42px;
   height: 42px;
-  background: rgba(217, 217, 217, 0.1);
+  background: #fff; /* Cambiar a fondo blanco */
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  overflow: hidden;
+  border: 1px solid #fff; /* Cambiar a borde blanco sólido */
 }
 
 .social-icons a.social-icon img {
   max-width: 100%;
   max-height: 100%;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Ícono blanco */
 }
 
 /*Banner*/
@@ -357,7 +361,7 @@ nav.navbar .narbar-toggler[aria-expanded="true"] .navbar-toggle-icon {
   position: relative;
 }
 
-skill-slider .item img {
+.skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }
@@ -369,6 +373,7 @@ skill-slider .item img {
   width: 40%;
   z-index: -1;
 }
+
 
 /*Projects*/
 .project {
@@ -517,6 +522,16 @@ skill-slider .item img {
   right: 0;
   z-index: -4;
 }
+
+/*Contact*/
+
+.contact{
+  background-image: url("./assets/img/wallpaperflare.com_wallpaper2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 /*Footer*/
 
