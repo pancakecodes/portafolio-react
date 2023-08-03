@@ -335,7 +335,7 @@ nav.navbar .narbar-toggler[aria-expanded="true"] .navbar-toggle-icon {
 }
 
 .skill-bx {
-  background: #151515;
+  background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -373,6 +373,7 @@ nav.navbar .narbar-toggler[aria-expanded="true"] .navbar-toggle-icon {
   width: 40%;
   z-index: -1;
 }
+
 
 
 /*Projects*/
