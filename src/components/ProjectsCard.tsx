@@ -10,11 +10,13 @@ interface ProjectsCardProps {
 const ProjectsCard: React.FC<ProjectsCardProps> = ({ title, description, image }) => {
   return (
     <Col xs={12} md={6} xl={4}>
-      <div className="proj-imgbx">
-        <img src={image} alt={title} />
-        <div>
-          <h4>{title}</h4>
-          <span>{description}</span>
+      <div className="proj-card">
+        <div className="proj-imgbx">
+          <img src={image} alt={title} />
+          <div className="proj-overlay">
+            <h4>{title}</h4>
+            <span>{description}</span>
+          </div>
         </div>
       </div>
     </Col>

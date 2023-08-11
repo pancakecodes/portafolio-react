@@ -524,6 +524,45 @@ nav.navbar .narbar-toggler[aria-expanded="true"] .navbar-toggle-icon {
   z-index: -4;
 }
 
+.proj-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.proj-imgbx {
+  position: relative;
+  overflow: hidden;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.proj-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  transition: bottom 0.3s;
+  opacity: 0;
+}
+
+.proj-card:hover .proj-imgbx {
+  transform: scale(1.05);
+}
+
+.proj-card:hover .proj-overlay {
+  bottom: 0;
+  opacity: 1;
+}
+
+
 /*Contact*/
 
 .contact{

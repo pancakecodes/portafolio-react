@@ -40,36 +40,36 @@ const Projects: React.FC = () => {
 
   return (
     <section className="project" id="project">
-      <Container>
-        <Row>
-          <Col>
-            <h2>Projects</h2>
-            <p>Here are some of my projects</p>
-            <Tab.Container id="project" defaultActiveKey="first">
-              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Tab Two</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                </Nav.Item>
-              </Nav>
-              <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((project, index) => (
-                      <ProjectsCard
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        image={project.image}
-                      />
-                    ))}
-                  </Row>
-                </Tab.Pane>
+    <Container>
+      <Row>
+        <Col>
+          <h2>Projects</h2>
+          <p>Here are some of my projects</p>
+          <Tab.Container id="project" defaultActiveKey="first">
+            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+              <Nav.Item>
+                <Nav.Link eventKey="first">Tab One</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="second">Tab Two</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="third">Tab Three</Nav.Link>
+              </Nav.Item>
+            </Nav>
+            <Tab.Content>
+              <Tab.Pane eventKey="first">
+                <Row>
+                  {projects.map((project, index) => (
+                    <ProjectsCard
+                      key={index}
+                      title={project.title}
+                      description={project.description}
+                      image={project.image}
+                    />
+                  ))}
+                </Row>
+              </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
                   id consectetur debitis magni. Exercitationem, quidem. Doloribus a
